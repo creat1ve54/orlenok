@@ -1,0 +1,273 @@
+/* ================================ Fonts ================================ */
+@import './fonts.scss';
+
+/* ================================ Animations ================================ */
+@import './_animations/**/*.scss';
+
+/* ================================ Styles ================================ */
+@import './_styles/*.scss';
+
+/* ================================ Reset ================================ */
+@import './reset.scss';
+
+/* ================================ Base ================================ */
+@import './-base/**/*.scss';
+
+/* ================================ Combinations ================================ */
+@import './-combinations/**/*.scss';
+
+/* ================================ Modules ================================ */
+@import './-modules/**/*.scss';
+
+/* ================================ Global Modifications ================================ */
+@import './mods/**/*.scss';
+
+body {
+  font-family: $FFMontserrat;
+  font-size: 16px;
+  background-color: #e7e3fa;
+}
+
+.container {
+  max-width: 1150px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 64px;
+  font-weight: 600;
+}
+
+.h1 {
+  font-size: 64px;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.h2 {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.h3 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.btn {
+  cursor: pointer;
+  width: fit-content;
+  padding: 8px 24px;
+  border-radius: 200px;
+
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 700;
+
+  &__svg {
+    padding: 6px;
+  }
+
+  &__container {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  &-solid {
+    color: #8572e8;
+    border: 2px solid #8572e8;
+  }
+
+  &-fill {
+    border: 2px solid #8572e8;
+    background-color: #8572e8;
+    color: #ffffff;
+    transition: all 0.3s ease-in-out;
+
+    @media (hover: hover) and (pointer: fine) {
+      &:hover {
+        border: 2px solid #b1a5f1;
+        background-color: #b1a5f1;
+        transition: all 0.3s ease-in-out;
+      }
+    }
+  }
+
+  &:disabled {
+    cursor: default;
+    pointer-events: none;
+    border: 2px solid #dad4f8;
+    background-color: #dad4f8;
+    transition: all 0.3s ease-in-out;
+  }
+
+  &--disabled {
+    cursor: default;
+    pointer-events: none;
+    border: 2px solid #dad4f8;
+    background-color: #dad4f8;
+    transition: all 0.3s ease-in-out;
+  }
+}
+
+.container-br {
+  position: relative;
+  border-radius: 0 0 64px 64px;
+  overflow: hidden;
+}
+
+.animation-slider {
+  &__one {
+    padding: 14px 0px;
+  }
+
+  &__two {
+    padding: 14px 0px;
+    background-color: #ffffff;
+    .animation-slider {
+      &__items {
+        display: inline-flex;
+        width: max-content;
+        animation: runnigBloсkRight 30s linear infinite;
+      }
+
+      &__item {
+        color: #8572e8;
+      }
+    }
+  }
+
+  &__wrapper {
+    overflow: hidden;
+    display: flex;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__case {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__items {
+    display: inline-flex;
+    width: max-content;
+    animation: runnigBloсkLeft 30s linear infinite;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding-right: 8px;
+    color: #e5097f;
+    font-size: 32px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+}
+
+@keyframes runnigBloсkLeft {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes runnigBloсkRight {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes runnigBloсkTop {
+  0% {
+    transform: translateY(0%);
+  }
+
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+.panel {
+  display: flex;
+  width: 100vw;
+  height: 100dvh;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: space-around;
+
+  .container-br {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.wrapper {
+  display: flex;
+  overflow-x: hidden;
+  background: #8572E8;
+}
+
+.comment {
+  background-color: #8572E8;
+  &__container {
+    display: flex;
+    gap: 24px;
+  }
+
+  &__left {
+
+    flex: 0 0 auto;
+  }
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__img {
+    border: 2px solid #ffffff;
+    border-radius: 100%;
+    overflow: hidden;
+    padding: 8px;
+    margin-bottom: 16px;
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 4px;
+    color: #ffffff;
+  }
+  
+  &__text {
+    color: #ffffff;
+
+  }
+}

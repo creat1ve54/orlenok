@@ -1,0 +1,197 @@
+include layouts/_base
+include layouts/_combinations
+include layouts/modules/_m-head.pug
+include components/header.pug
+
+html(lang='ru')
+  +m-head
+  body
+    +header
+    .main
+      .container-br
+        img.main__bg(src="../assets/images/bg.png" alt="BG")
+        .main__container.container
+          .main__left 
+            img(src="../assets/images/main.png" alt="Main")
+          .main__right 
+            .main__text Для регистрации на мероприятиях Вам необходимо авторизоваться
+            .btn.btn-fill
+              .btn__container Войти
+    .animation-slider
+      .animation-slider__one
+        .animation-slider__wrapper
+          .animation-slider__container
+            .animation-slider__case
+              .animation-slider__items
+                .animation-slider__item
+                  | Всероссийский форум учителей орлят России 2024
+                  svg(width="22" height='45' fill='#4F3A8C')  
+                    use( href="../assets/icons/sprite.svg#logo-elem")
+                .animation-slider__item
+                  | Всероссийский форум учителей орлят России 2024
+                  svg(width="22" height='45' fill='#4F3A8C')  
+                    use( href="../assets/icons/sprite.svg#logo-elem")
+                .animation-slider__item
+                  | Всероссийский форум учителей орлят России 2024
+                  svg(width="22" height='45' fill='#4F3A8C')  
+                    use( href="../assets/icons/sprite.svg#logo-elem")
+                .animation-slider__item
+                  | Всероссийский форум учителей орлят России 2024
+                  svg(width="22" height='45' fill='#4F3A8C')  
+                    use( href="../assets/icons/sprite.svg#logo-elem")
+              .animation-slider__items
+                .animation-slider__item
+                  | Всероссийский форум учителей орлят России 2024
+                  svg(width="22" height='45' fill='#4F3A8C')  
+                    use( href="../assets/icons/sprite.svg#logo-elem")
+                .animation-slider__item
+                  | Всероссийский форум учителей орлят России 2024
+                  svg(width="22" height='45' fill='#4F3A8C')  
+                    use( href="../assets/icons/sprite.svg#logo-elem")
+                .animation-slider__item
+                  | Всероссийский форум учителей орлят России 2024
+                  svg(width="22" height='45' fill='#4F3A8C')  
+                    use( href="../assets/icons/sprite.svg#logo-elem")
+                .animation-slider__item
+                  | Всероссийский форум учителей орлят России 2024
+                  svg(width="22" height='45' fill='#4F3A8C')  
+                    use( href="../assets/icons/sprite.svg#logo-elem")
+      .animation-slider__two
+        .animation-slider__wrapper
+          .animation-slider__container
+            .animation-slider__case
+              .animation-slider__items
+                .animation-slider__item
+                  | Всероссийский форум учителей орлят России 2024
+                  svg(width="22" height='45' fill='#E5097F')  
+                    use( href="../assets/icons/sprite.svg#logo-elem")
+                .animation-slider__item
+                  | Всероссийский форум учителей орлят России 2024
+                  svg(width="22" height='45' fill='#E5097F')  
+                    use( href="../assets/icons/sprite.svg#logo-elem")
+                .animation-slider__item
+                  | Всероссийский форум учителей орлят России 2024
+                  svg(width="22" height='45' fill='#E5097F')  
+                    use( href="../assets/icons/sprite.svg#logo-elem")
+                .animation-slider__item
+                  | Всероссийский форум учителей орлят России 2024
+                  svg(width="22" height='45' fill='#E5097F')  
+                    use( href="../assets/icons/sprite.svg#logo-elem")
+              .animation-slider__items
+                .animation-slider__item
+                  | Всероссийский форум учителей орлят России 2024
+                  svg(width="22" height='45' fill='#E5097F')  
+                    use( href="../assets/icons/sprite.svg#logo-elem")
+                .animation-slider__item
+                  | Всероссийский форум учителей орлят России 2024
+                  svg(width="22" height='45' fill='#E5097F')  
+                    use( href="../assets/icons/sprite.svg#logo-elem")
+                .animation-slider__item
+                  | Всероссийский форум учителей орлят России 2024
+                  svg(width="22" height='45' fill='#E5097F')  
+                    use( href="../assets/icons/sprite.svg#logo-elem")
+                .animation-slider__item
+                  | Всероссийский форум учителей орлят России 2024
+                  svg(width="22" height='45' fill='#E5097F')  
+                    use( href="../assets/icons/sprite.svg#logo-elem")
+    .wrapper
+      .about.panel
+        .container-br
+          .about__container
+            .about__left
+              .about__slider-wrapper
+                .about__slider-container
+                  .about__slider-case
+                    .about__slider-items
+                      .about__slider-item
+                        img(src="../assets/images/about/1.png" alt="About")
+                      .about__slider-item
+                        img(src="../assets/images/about/2.png" alt="About")
+                      .about__slider-item
+                        img(src="../assets/images/about/1.png" alt="About")
+                      .about__slider-item
+                        img(src="../assets/images/about/2.png" alt="About")
+                    .about__slider-items
+                      .about__slider-item
+                        img(src="../assets/images/about/1.png" alt="About")
+                      .about__slider-item
+                        img(src="../assets/images/about/2.png" alt="About")
+                      .about__slider-item
+                        img(src="../assets/images/about/1.png" alt="About")
+                      .about__slider-item
+                        img(src="../assets/images/about/2.png" alt="About")
+            .about__right
+              .about__right-container
+                .about__title.h1 О Форуме
+                .about__text #[span.badge 2.11 - 5.11.2023] в ВДЦ «Орлёнок» пройдёт Всероссийский форум учителей Орлят России. Его участниками станут представители флагманских школ программы «Орлята России».
+                .about__text Форум предназначен для обсуждения и исследования важной роли, которую играет учитель начальных классов в воспитании младших школьников. Учитель начальных классов не только обучает учеников основным знаниям, но и формирует их личность, развивает у них социальные навыки и самооценку.
+                .about__text Целью Форума является #[span.badge создание платформы для обмена опытом] исследований и идей, которые могут помочь учителю эффективно и гармонично развивать и воспитывать обучающихся начальных классов.
+                .about__grid-list
+                  .about__grid-item 300 участников
+                  .about__grid-item 15 спикеров
+                  .about__grid-item 89 регионов
+                  .about__grid-item 4 дня
+      .comment.comment--one.panel
+        .container-br
+          .container
+            .comment__container
+              .comment__left
+                .profile
+                  .profile__img
+                    img(src="../assets/images/profile-1.png" alt="Profile")
+                  .profile__title Кравцов Сергей Сергеевич
+                  .profile__text Министр просвещения Российской Федерации
+              .comment__right
+                .comment__text #[span.comment__text-wight Уважаемые участники Всероссийского форума учителей начальных классов!] 
+                .comment__text Первые шаги в мир знаний и социальных отношений, которые делают дети в начальных классах, – это фундамент, на котором строится их будущая жизнь. И именно вы, уважаемые учителя, играете ключевую роль в создании этого фундамента успеха будущего выпускника. Первый учитель для каждого человека – это проводник в большой мир. Каждый из вас выполняет главную задачу этого этапа школьной жизни – учит ребенка учиться, прививает интерес к знаниям, любовь к родной школе, к своей Малой Родине, к культуре и истории своего народа. Быть одновременно и другом, и воспитателем, и наставником, и защитником – это очень трудное и ответственное дело и, безусловно, это призвание. Как показал Год педагога и наставника, очень важно чтобы учителя начальных классов получали заслуженное внимание и профессиональную поддержку. Мы работаем над повышением престижа учительского труда и ростом благосостояния педагогов. Мы делаем все для того, чтобы вы работали с детьми в комфортных условиях. Эта работа остаётся в постоянном приоритете Министерства просвещения России.
+                .comment__text #[span.comment__text-wight Спасибо всем вам за ваш труд!] Желаю всем нам продуктивной работы на этом Форуме. Вместе мы сделаем обучение и воспитание в начальных классах ещё более эффективным и качественным. 
+      .comment.comment--two.panel
+        .container-br
+          .container
+            .comment__container
+              .comment__left
+                .profile
+                  .profile__img
+                    img(src="../assets/images/profile-1.png" alt="Profile")
+                  .profile__title Кравцов Сергей Сергеевич
+                  .profile__text Министр просвещения Российской Федерации
+              .comment__right
+                .comment__text #[span.comment__text-wight Уважаемые участники Всероссийского форума учителей начальных классов!] 
+                .comment__text Первые шаги в мир знаний и социальных отношений, которые делают дети в начальных классах, – это фундамент, на котором строится их будущая жизнь. И именно вы, уважаемые учителя, играете ключевую роль в создании этого фундамента успеха будущего выпускника. Первый учитель для каждого человека – это проводник в большой мир. Каждый из вас выполняет главную задачу этого этапа школьной жизни – учит ребенка учиться, прививает интерес к знаниям, любовь к родной школе, к своей Малой Родине, к культуре и истории своего народа. Быть одновременно и другом, и воспитателем, и наставником, и защитником – это очень трудное и ответственное дело и, безусловно, это призвание. Как показал Год педагога и наставника, очень важно чтобы учителя начальных классов получали заслуженное внимание и профессиональную поддержку. Мы работаем над повышением престижа учительского труда и ростом благосостояния педагогов. Мы делаем все для того, чтобы вы работали с детьми в комфортных условиях. Эта работа остаётся в постоянном приоритете Министерства просвещения России.
+                .comment__text #[span.comment__text-wight Спасибо всем вам за ваш труд!] Желаю всем нам продуктивной работы на этом Форуме. Вместе мы сделаем обучение и воспитание в начальных классах ещё более эффективным и качественным. 
+    .about  
+      .container-br
+        .about__container
+          .about__left
+            .about__slider-wrapper
+              .about__slider-container
+                .about__slider-case
+                  .about__slider-items
+                    .about__slider-item
+                      img(src="../assets/images/about/1.png" alt="About")
+                    .about__slider-item
+                      img(src="../assets/images/about/2.png" alt="About")
+                    .about__slider-item
+                      img(src="../assets/images/about/1.png" alt="About")
+                    .about__slider-item
+                      img(src="../assets/images/about/2.png" alt="About")
+                  .about__slider-items
+                    .about__slider-item
+                      img(src="../assets/images/about/1.png" alt="About")
+                    .about__slider-item
+                      img(src="../assets/images/about/2.png" alt="About")
+                    .about__slider-item
+                      img(src="../assets/images/about/1.png" alt="About")
+                    .about__slider-item
+                      img(src="../assets/images/about/2.png" alt="About")
+          .about__right
+            .about__right-container
+              .about__title.h1 О Форуме
+              .about__text #[span.badge 2.11 - 5.11.2023] в ВДЦ «Орлёнок» пройдёт Всероссийский форум учителей Орлят России. Его участниками станут представители флагманских школ программы «Орлята России».
+              .about__text Форум предназначен для обсуждения и исследования важной роли, которую играет учитель начальных классов в воспитании младших школьников. Учитель начальных классов не только обучает учеников основным знаниям, но и формирует их личность, развивает у них социальные навыки и самооценку.
+              .about__text Целью Форума является #[span.badge создание платформы для обмена опытом] исследований и идей, которые могут помочь учителю эффективно и гармонично развивать и воспитывать обучающихся начальных классов.
+              .about__grid-list
+                .about__grid-item 300 участников
+                .about__grid-item 15 спикеров
+                .about__grid-item 89 регионов
+                .about__grid-item 4 дня
